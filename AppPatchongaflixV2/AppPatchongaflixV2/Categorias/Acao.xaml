@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.Categorias.Acao">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" />
+
+            <ScrollView>
+                <Grid Padding="5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="btnBatman" Grid.Row="0" Grid.Column="0" Clicked="btnBatman_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnBreakingBad" Grid.Row="0" Grid.Column="1" Clicked="btnBreakingBad_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnDjangoLivre" Grid.Row="1" Grid.Column="0" Clicked="btnDjangoLivre_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnFastFurious2" Grid.Row="1" Grid.Column="1" Clicked="btnFastFurious2_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnPeakyBlinders" Grid.Row="2" Grid.Column="0" Clicked="btnPeakyBlinders_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnTheWalkingDead" Grid.Row="2" Grid.Column="1" Clicked="btnTheWalkingDead_Clicked" Padding="-5"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.Categorias.Aventura">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Image x:Name="logo" Source="patchongaflix.png" />
+
+            <ScrollView>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="btnArrow" Grid.Row="0" Grid.Column="0" Clicked="btnArrow_Clicked" Padding="-10" />
+                    <ImageButton x:Name="btnDororo" Grid.Row="0" Grid.Column="1" Clicked="btnDororo_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnInvencivel" Grid.Row="1" Grid.Column="0" Clicked="btnInvencivel_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnJojo" Grid.Row="1" Grid.Column="1" Clicked="btnJojo_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnLigaZackSnyder" Grid.Row="2" Grid.Column="0" Clicked="btnLigaZackSnyder_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnTheBoys" Grid.Row="2" Grid.Column="1" Clicked="btnTheBoys_Clicked" Padding="-5"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

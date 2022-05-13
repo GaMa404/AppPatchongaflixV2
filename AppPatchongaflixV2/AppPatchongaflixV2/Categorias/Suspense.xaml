@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.Categorias.Suspense">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Image x:Name="logo" Source="patchongaflix.png" />
+
+            <ScrollView>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="btnCorra" Grid.Row="0" Grid.Column="0" Clicked="btnCorra_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnFragmentado" Grid.Row="0" Grid.Column="1" Clicked="btnFragmentado_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnHomemNasTrevas" Grid.Row="1" Grid.Column="0" Clicked="btnHomemNasTrevas_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnIlhaDoMedo" Grid.Row="1" Grid.Column="1" Clicked="btnIlhaDoMedo_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnJoker" Grid.Row="2" Grid.Column="0" Clicked="btnJoker_Clicked" Padding="-5"/>
+                    <ImageButton x:Name="btnRedSparrow" Grid.Row="2" Grid.Column="1" Clicked="btnRedSparrow_Clicked" Padding="-5"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

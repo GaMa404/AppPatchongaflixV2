@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.Filmes.Aventura.Arrow">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <WebView x:Name="viewer" Source="https://www.youtube.com/embed/2yrviapP5uY" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" BackgroundColor="Black"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Aspect="AspectFill"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Arrow" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="10 de outubro de 2012" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Diretor: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Andrew Kreisberg, Greg Berlanti e Marc Guggenheim" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

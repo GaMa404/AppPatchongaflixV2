@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.Categorias.Comedia">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+            <Image x:Name="logo" Source="patchongaflix.png" />
+
+            <ScrollView>
+                <Grid Padding="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="300"/>
+                    </Grid.RowDefinitions>
+
+                    <ImageButton x:Name="btnGenteGrande2" Grid.Row="0" Grid.Column="0" Clicked="btnGenteGrande2_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnPeacemaker" Grid.Row="0" Grid.Column="1" Clicked="btnPeacemaker_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnSuperHeroi" Grid.Row="1" Grid.Column="0" Clicked="btnSuperHeroi_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnTodoMundoEmPanico" Grid.Row="1" Grid.Column="1" Clicked="btnTodoMundoEmPanico_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnVizinhancaDoBarulho" Grid.Row="2" Grid.Column="0" Clicked="btnVizinhancaDoBarulho_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnZumbilandia" Grid.Row="2" Grid.Column="1" Clicked="btnZumbilandia_Clicked" Padding="-5" />
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

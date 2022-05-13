@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPatchongaflixV2.MainPage"
+             BackgroundColor="Black">
+
+    <Grid RowSpacing="1" ColumnSpacing="5" Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+        <!-- Botões coluna 0 -->
+        <Button x:Name="acao" Text="Ação" Clicked="acao_Clicked" Grid.Column="0" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"/>
+        <Button x:Name="comedia" Text="Comédia" Clicked="comedia_Clicked" Grid.Column="0" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}" />
+        <Button x:Name="suspense" Text="SUspense" Clicked="suspense_Clicked" Grid.Column="0" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}" />
+
+        <!-- Botões coluna 1 -->
+        <Button x:Name="aventura" Text="Aventura" Clicked="aventura_Clicked" Grid.Column="1" Grid.Row="1" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}" />
+        <Button x:Name="drama" Text="Drama" Clicked="drama_Clicked" Grid.Column="1" Grid.Row="2" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}" />
+        <Button x:Name="terror" Text="Terror" Clicked="terror_Clicked" Grid.Column="1" Grid.Row="3" HorizontalOptions="Fill" VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}" />
+
+    </Grid>
+
+</ContentPage>
