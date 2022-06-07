@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPatchongaflixV2.Filmes.Suspense.Joker">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical" BackgroundColor="Black">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <WebView x:Name="viewer" Source="https://www.youtube.com/embed/kFCvoTe7huk" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" BackgroundColor="Black"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0" Aspect="AspectFill"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Coringa" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="3 de outubro de 2019" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Diretor: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Todd Phillips" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

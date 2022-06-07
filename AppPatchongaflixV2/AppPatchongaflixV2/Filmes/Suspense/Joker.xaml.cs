@@ -15,6 +15,9 @@ namespace AppPatchongaflixV2.Filmes.Suspense
         public Joker()
         {
             InitializeComponent();
+
+            logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
+            poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Suspense.joker.jpg");
         }
     }
 }

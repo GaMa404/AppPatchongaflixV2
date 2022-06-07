@@ -20,7 +20,7 @@
                     </Grid.RowDefinitions>
 
                     <ImageButton x:Name="btnArrow" Grid.Row="0" Grid.Column="0" Clicked="btnArrow_Clicked" Padding="-10" />
-                    <ImageButton x:Name="btnDororo" Grid.Row="0" Grid.Column="1" Clicked="btnDororo_Clicked" Padding="-5" />
+                    <ImageButton x:Name="btnDororo" Grid.Row="0" Grid.Column="1" Clicked="btnDororo_Clicked" Padding="-10" />
                     <ImageButton x:Name="btnInvencivel" Grid.Row="1" Grid.Column="0" Clicked="btnInvencivel_Clicked" Padding="-5" />
                     <ImageButton x:Name="btnJojo" Grid.Row="1" Grid.Column="1" Clicked="btnJojo_Clicked" Padding="-5" />
                     <ImageButton x:Name="btnLigaZackSnyder" Grid.Row="2" Grid.Column="0" Clicked="btnLigaZackSnyder_Clicked" Padding="-5" />

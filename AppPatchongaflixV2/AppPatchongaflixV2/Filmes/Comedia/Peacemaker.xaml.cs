@@ -15,6 +15,9 @@ namespace AppPatchongaflixV2.Filmes.Comedia
         public Peacemaker()
         {
             InitializeComponent();
+
+            logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
+            poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Comedia.peacemaker.jpg");
         }
     }
 }
