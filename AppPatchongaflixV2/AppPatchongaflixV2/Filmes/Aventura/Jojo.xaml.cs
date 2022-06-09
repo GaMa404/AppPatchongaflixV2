@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Aventura
         public Jojo()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Aventura.jojo.jpg");

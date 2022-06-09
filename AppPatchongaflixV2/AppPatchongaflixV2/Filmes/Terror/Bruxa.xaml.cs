@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Terror
         public Bruxa()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Terror.bruxa.jpg");

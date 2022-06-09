@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Acao
         public PeakyBlinders()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Acao.peaky_blinders.jpg");

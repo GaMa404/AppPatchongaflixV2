@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Comedia
         public VizinhancaDoBarulho()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Comedia.vizinhanca_do_barulho.jpg");

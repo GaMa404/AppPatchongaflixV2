@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Drama
         public ResgateSoldadoRyan()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Drama.resgate_soldado_ryan.jpg");

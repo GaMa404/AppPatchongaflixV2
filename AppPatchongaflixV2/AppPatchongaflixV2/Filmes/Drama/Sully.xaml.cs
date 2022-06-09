@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Drama
         public Sully()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Drama.sully.jpg");

@@ -15,6 +15,7 @@ namespace AppPatchongaflixV2.Filmes.Comedia
         public SuperHeroi()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             logo.Source = ImageSource.FromResource("AppPatchongaflixV2.Logo.patchongaflix.png");
             poster.Source = ImageSource.FromResource("AppPatchongaflixV2.Posters.Comedia.super_heroi.jpg");
